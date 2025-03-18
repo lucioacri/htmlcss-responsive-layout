@@ -10,6 +10,9 @@ body {
 
 img {
   max-width: 100%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a {
@@ -31,19 +34,20 @@ ul {
 }
 
 .container {
-  max-width: 760px;
+  max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
+  width: 100%;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 2rem;
-  margin-left: -1rem;
-  margin-right: -1rem;
+
+  /* margin-left: -1rem;
+  margin-right: -1rem; */
 }
 
 [class*="col"] {
@@ -75,8 +79,42 @@ main {
   flex-grow: 1;
 }
 
+.card {
+  background-color: white;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 767px;
+}
+
 /* MAIN */
 
 main {
   background-color: #f6f5f3;
+}
+
+.dessert-name {
+  color: #4d3565;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+span {
+  color: #a29ba3;
+}
+
+.card.content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.card.content h2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+ul li {
+  padding-bottom: 1rem;
+  display: inline-block;
+  width: 100%;
 }
