@@ -9,7 +9,7 @@ body {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -50,31 +50,6 @@ ul {
   margin-right: -1rem; */
 }
 
-[class*="col"] {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.col-1-2 {
-  width: calc(100% / 2);
-}
-
-.col-1-3 {
-  width: calc(100% / 3);
-}
-
-.col-1-4 {
-  width: calc(100% / 4);
-}
-
-.col-1-5 {
-  width: calc(100% / 5);
-}
-
-.col-1-6 {
-  width: calc(100% / 6);
-}
-
 main {
   flex-grow: 1;
 }
@@ -92,6 +67,17 @@ header {
   background-color: white;
   padding: 2rem 1rem;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nerko-one-regular {
+  font-family: "Nerko One", cursive;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 4rem;
+  color: orange;
 }
 
 /* MAIN */
@@ -145,6 +131,10 @@ button {
   margin: 0 5px;
 }
 
+.hidden {
+  display: none;
+}
+
 .presentation .container h2 {
   font-size: 2rem;
   padding-bottom: 2rem;
@@ -188,4 +178,48 @@ footer .container .info span {
   width: calc(100% / 5);
   display: inline-block;
   padding-bottom: 1rem;
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 768px) {
+  header {
+    text-align: left;
+  }
+
+  .container {
+    max-width: 991px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  ul li {
+    width: calc(100% / 4);
+  }
+
+  button {
+    flex-grow: 1;
+  }
+
+  .hidden {
+    display: inline-block;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .dessert-name .container h1 .hidden {
+    color: #4d3565;
+  }
+
+  .presentation .container img {
+    padding-right: 5px;
+    float: left;
+  }
+
+  .links a {
+    padding-right: 1rem;
+    width: auto;
+  }
 }

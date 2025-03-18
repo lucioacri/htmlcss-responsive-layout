@@ -13,17 +13,23 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
-      <h1>GIALLO BOOLEANO</h1>
+      <h1 class="nerko-one-regular">GIALLO BOOLEANO</h1>
     </header>
     <main>
       <section class="dessert-name">
         <div class="container">
           <span>DOLCI E DESSERT</span>
-          <h1>Tiramisù</h1>
+          <h1>Tiramisù <span class="hidden">(Dolce Tradizionale)</span></h1>
         </div>
       </section>
 
@@ -55,7 +61,11 @@
           <button><i class="fa-brands fa-youtube"></i></button>
         </div>
       </section>
-
+      <section class="hidden">
+        <div class="container">
+          <img src="./img/banner.png" alt="" />
+        </div>
+      </section>
       <section class="presentation">
         <div class="container">
           <h2>Presentation</h2>
