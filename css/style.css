@@ -135,6 +135,10 @@ button {
   display: none;
 }
 
+.hidden-socials {
+  display: none;
+}
+
 .presentation .container h2 {
   font-size: 2rem;
   padding-bottom: 2rem;
@@ -154,10 +158,10 @@ p {
 footer {
   background-color: #7c69a4;
   color: white;
-  padding: 2rem 0rem;
+  padding: 2rem 2rem;
 }
 
-footer .container .info span {
+footer .info span {
   color: white;
 }
 
@@ -202,7 +206,7 @@ footer .container .info span {
   }
 
   .hidden {
-    display: inline-block;
+    display: block;
   }
 
   h1 {
@@ -211,6 +215,7 @@ footer .container .info span {
 
   .dessert-name .container h1 .hidden {
     color: #4d3565;
+    display: inline-block;
   }
 
   .presentation .container img {
@@ -221,5 +226,44 @@ footer .container .info span {
   .links a {
     padding-right: 1rem;
     width: auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  .hidden-socials {
+    display: inline-block;
+    color: black;
+    padding-left: 10px;
+    font-size: 1rem;
+  }
+
+  .img {
+    max-width: 70%;
+  }
+
+  .content {
+    max-width: 30%;
+  }
+
+  ul li {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .info {
+    text-align: left;
   }
 }
