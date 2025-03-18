@@ -83,6 +83,9 @@ header {
 
 main {
   background-color: #f6f5f3;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .dessert-name {
